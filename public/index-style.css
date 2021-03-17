@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#tool-bar {
+    z-index: 10;
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    background-color: #242423;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 4px 4px 4px -1px black;
+}
+
+#brush {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+#eraser {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 1s;
+}
+
+input[type="color"] {
+	width: 32px;
+	height: 32px;
+}
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+}
+#radius-box {
+    display: flex;
+}
+
+#radius-view {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: white;
+}
+
+#shadow-div {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
